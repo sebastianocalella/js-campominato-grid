@@ -1,13 +1,10 @@
 const gridElement = document.getElementById('grid');
 const startElement = document.getElementById('play');
+const mainElement = document.getElementById('main-element');
+
 
 startElement.addEventListener('click', function(){
-    for (let i = 1; i <= 100; i++){
-        const newSquare = createSquare();
-        newSquare.innerHTML = i;
-        gridElement.appendChild(newSquare);
-    }
-    gridElement.classList.toggle('grid');
+    mainElement.classList.toggle('d-none');
 })
 
 function createSquare (){
@@ -16,5 +13,8 @@ function createSquare (){
     return DivElement;
 }
 
-
-
+for (let i = 1; i <= 100; i++){
+    const newSquare = createSquare();
+    newSquare.innerHTML = i;
+    gridElement.appendChild(newSquare);
+}
