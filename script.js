@@ -6,9 +6,10 @@ function createSquare (){
     return DivElement;
 }
 
-for (let i = 0; i < 100; i++){
+for (let i = 1; i <= 100; i++){
 
     const newSquare = createSquare();
+    newSquare.innerHTML = i;
     gridElement.appendChild(newSquare);
 }
 
