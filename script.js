@@ -7,6 +7,7 @@ startElement.addEventListener('click', function(){
         newSquare.innerHTML = i;
         gridElement.appendChild(newSquare);
     }
+    gridElement.classList.toggle('grid');
 })
 
 function createSquare (){
